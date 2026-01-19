@@ -57,13 +57,13 @@ This project can be executed in two ways:
 
 ── analytics_queries.sql           # Reporting queries / metrics
 
--- docker-compose.yml
+── docker-compose.yml
 
--- Dockerfile
+── Dockerfile
 
 ── pipeline_ingest.py              # Ingestion + transformations (SQLite)
 
--- README.md
+── README.md
 
 
 ## Database Schema
