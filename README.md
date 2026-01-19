@@ -50,13 +50,19 @@ This project can be executed in two ways:
 ## Project Structure
 .
 ── pipeline_ingest.py              # Ingestion + transformations (SQLite)
+
 ── analytics_queries.sql           # Reporting queries / metrics
+
 ── dags/
    └── analytics_pipeline_steps.py  # Airflow DAG (no Docker)
+
 ── data/
    └── events/                     # Input JSON events (local)
+
 ── storage/
+
 ── analytics.sqlite            # SQLite DB (generated)
+
 ── .checkpoint_ingested_files.txt  # Checkpoint file (generated)
 
 
