@@ -1,0 +1,7 @@
+{
+  "event_id": "e_001",
+  "event_type": "user_login",
+  "timestamp": "2026-01-19T10:05:00Z",
+  "user_id": "u_001",
+  "device": "ios"
+}

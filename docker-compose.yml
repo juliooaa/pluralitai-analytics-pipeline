@@ -1,0 +1,12 @@
+services:
+  pipeline:
+    build: .
+    container_name: docs-analytics-pipeline
+    environment:
+      EVENTS_DIR: /data/events
+      DB_PATH: /state/analytics.sqlite
+      CHECKPOINT_PATH: /state/.checkpoint_ingested_files.txt
+    volumes:
+      - ./data/events:/data/events:ro
+      - ./storage:/state
+    command: ["python", "pipeline_ingest.py"]

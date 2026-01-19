@@ -1,0 +1,11 @@
+{
+  "event_id": "e_003",
+  "event_type": "document_edit",
+  "timestamp": "2026-01-19T10:12:00Z",
+  "user_id": "u_001",
+  "document_id": "d_001",
+  "session_id": "s_001",
+  "edit": {
+    "chars_delta": 54
+  }
+}

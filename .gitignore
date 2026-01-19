@@ -1,16 +1,11 @@
+# State / output
+storage/
+
 # Python
 __pycache__/
 *.pyc
 .venv/
 .env
-
-# SQLite files
-*.sqlite
-*.sqlite-wal
-*.sqlite-shm
-
-# Checkpoint files
-.checkpoint_ingested_files.txt
 
 # OS / Editor
 .DS_Store

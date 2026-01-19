@@ -1,0 +1,9 @@
+{
+  "event_id": "e_005",
+  "event_type": "document_shared",
+  "timestamp": "2026-01-19T10:18:00Z",
+  "user_id": "u_001",
+  "document_id": "d_001",
+  "session_id": "s_001",
+  "sharedWithUserId": "u_003"
+}

@@ -1,0 +1,11 @@
+{
+  "event_id": "e_004",
+  "event_type": "comment_added",
+  "timestamp": "2026-01-19T10:15:00Z",
+  "user_id": "u_002",
+  "document_id": "d_001",
+  "session_id": "s_002",
+  "comment": {
+    "text": "Looks good, but we should add more details in the timeline."
+  }
+}

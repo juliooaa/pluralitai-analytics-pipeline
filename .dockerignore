@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+
+# Environment files
+.env
+
+# SQLite artifacts
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Checkpoint file
+.checkpoint_ingested_files.txt
+
+# OS / Editor
+.DS_Store
+.vscode/
+
+# Local data folder (mounted as volume, no need in image build)
+data/

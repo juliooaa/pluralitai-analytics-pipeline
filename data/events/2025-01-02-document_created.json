@@ -1,0 +1,11 @@
+{
+  "event_id": "e_002",
+  "event_type": "document_created",
+  "timestamp": "2026-01-19T10:10:00Z",
+  "user_id": "u_001",
+  "document_id": "d_001",
+  "document": {
+    "title": "Project Plan",
+    "owner_user_id": "u_001"
+  }
+}
