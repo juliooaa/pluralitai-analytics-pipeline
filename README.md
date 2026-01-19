@@ -17,12 +17,12 @@ This project can be executed in two ways:
 2) **With Docker Compose** (recommended for consistency and easy setup)
 
 ### ✅ Option 1 — Run Locally (Python)
-   run pipeline_ingest: python3 pipeline_ingest.py
-   run analytics: sqlite3 storage/analytics.sqlite -cmd ".headers on" -cmd ".mode column" < analytics_queries.sql
+   - run pipeline_ingest: python3 pipeline_ingest.py
+   - run analytics: sqlite3 storage/analytics.sqlite -cmd ".headers on" -cmd ".mode column" < analytics_queries.sql
 
 ### ✅ Option 2 — Run with Docker Compose
-   run pipeline_ingest: docker compose up --build
-   run analytics: docker compose run --rm pipeline sh -lc \
+   - run pipeline_ingest: docker compose up --build
+   - run analytics: docker compose run --rm pipeline sh -lc \
 "sqlite3 /state/analytics.sqlite -cmd '.headers on' -cmd '.mode column' < /app/analytics_queries.sql"
 
 ### Event examples
