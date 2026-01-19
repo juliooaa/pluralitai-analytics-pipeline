@@ -54,10 +54,10 @@ This project can be executed in two ways:
 ── analytics_queries.sql           # Reporting queries / metrics
 
 ── dags/
-   └── analytics_pipeline_steps.py  # Airflow DAG (no Docker)
+   ── analytics_pipeline_steps.py  # Airflow DAG (no Docker)
 
 ── data/
-   └── events/                     # Input JSON events (local)
+   ── events/                     # Input JSON events (local)
 
 ── storage/
 
