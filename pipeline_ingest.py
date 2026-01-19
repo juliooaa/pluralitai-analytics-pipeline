@@ -113,6 +113,7 @@ def init_schema(con: sqlite3.Connection) -> None:
             event_ts TEXT,
             user_id TEXT,
             document_id TEXT,
+            session_id TEXT,
             source_file TEXT,
             raw_json TEXT NOT NULL
         );
@@ -146,6 +147,7 @@ def init_schema(con: sqlite3.Connection) -> None:
             event_ts TEXT,
             user_id TEXT,
             document_id TEXT,
+            session_id TEXT,
 
             -- derived
             day_of_week TEXT,
@@ -220,15 +222,18 @@ def ingest_raw(con: sqlite3.Connection, new_files: List[Path]) -> List[str]:
             user_id = to_str(ev.get("user_id") or ev.get("userId") or ev.get("uid"))
             document_id = to_str(ev.get("document_id") or ev.get("documentId") or ev.get("doc_id"))
 
+            # Session id is optional, but very useful for analytics
+            session_id = to_str(ev.get("session_id") or ev.get("sessionId"))
+
             raw_json = json.dumps(ev, ensure_ascii=False)
 
             con.execute(
                 """
                 INSERT OR IGNORE INTO raw_events
-                (event_id, event_type, event_ts, user_id, document_id, source_file, raw_json)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
+                (event_id, event_type, event_ts, user_id, document_id, session_id, source_file, raw_json)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 """,
-                (event_id, event_type, event_ts, user_id, document_id, source_file, raw_json),
+                (event_id, event_type, event_ts, user_id, document_id, session_id, source_file, raw_json),
             )
             inserted_rows += 1
 
@@ -331,7 +336,7 @@ def transform_events(con: sqlite3.Connection) -> None:
     """
     con.execute(f"""
         INSERT OR IGNORE INTO events (
-            event_id, event_type, event_ts, user_id, document_id,
+            event_id, event_type, event_ts, user_id, document_id, session_id,
             day_of_week,
             comment_text, shared_with_user_id, edit_chars_delta,
             raw_json
@@ -342,6 +347,7 @@ def transform_events(con: sqlite3.Connection) -> None:
             r.event_ts,
             r.user_id,
             r.document_id,
+            r.session_id,
 
             {day_of_week_expr()} AS day_of_week,
 
