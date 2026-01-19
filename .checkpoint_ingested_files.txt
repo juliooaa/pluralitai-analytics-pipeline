@@ -1,0 +1,9 @@
+/Users/julioaraujo/Desktop/julio/pluralitAI/data/events/2025-01-01-comment_added.json
+/Users/julioaraujo/Desktop/julio/pluralitAI/data/events/2025-01-01-document_edit.json
+/Users/julioaraujo/Desktop/julio/pluralitAI/data/events/2025-01-01-document_shared.json
+/Users/julioaraujo/Desktop/julio/pluralitAI/data/events/2025-01-01-user_login.json
+/Users/julioaraujo/Desktop/julio/pluralitAI/data/events/2025-01-02-comment_added.json
+/Users/julioaraujo/Desktop/julio/pluralitAI/data/events/2025-01-02-document_created.json
+/Users/julioaraujo/Desktop/julio/pluralitAI/data/events/2025-01-02-document_edit.json
+/Users/julioaraujo/Desktop/julio/pluralitAI/data/events/2025-01-02-document_shared.json
+/Users/julioaraujo/Desktop/julio/pluralitAI/data/events/2025-01-02-user_login.json
