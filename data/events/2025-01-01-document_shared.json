@@ -1,0 +1,9 @@
+{
+  "event_id": "evt_004",
+  "event_type": "document_shared",
+  "timestamp": "2025-01-01T10:08:00Z",
+  "user_id": "user_123",
+  "document_id": "doc_456",
+  "shared_with_user_id": "user_999",
+  "permission": "edit"
+}

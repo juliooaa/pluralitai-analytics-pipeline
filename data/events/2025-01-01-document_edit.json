@@ -1,0 +1,10 @@
+{
+  "event_id": "evt_002",
+  "event_type": "document_edit",
+  "timestamp": "2025-01-01T10:06:45Z",
+  "user_id": "user_123",
+  "document_id": "doc_456",
+  "edit_length": 120,
+  "ops_count": 3,
+  "cursor_position": 540
+}

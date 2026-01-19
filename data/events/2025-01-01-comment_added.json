@@ -1,0 +1,9 @@
+{
+  "event_id": "evt_003",
+  "event_type": "comment_added",
+  "timestamp": "2025-01-01T10:07:10Z",
+  "user_id": "user_789",
+  "document_id": "doc_456",
+  "comment_id": "cmt_001",
+  "comment_length": 56
+}
