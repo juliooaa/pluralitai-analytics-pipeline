@@ -48,10 +48,6 @@ This project can be executed in two ways:
   - Anomaly checks
 
 ## Project Structure
-.
-── pipeline_ingest.py              # Ingestion + transformations (SQLite)
-
-── analytics_queries.sql           # Reporting queries / metrics
 
 ── dags/
    ── analytics_pipeline_steps.py  # Airflow DAG (no Docker)
@@ -59,11 +55,15 @@ This project can be executed in two ways:
 ── data/
    ── events/                     # Input JSON events (local)
 
-── storage/
+── analytics_queries.sql           # Reporting queries / metrics
 
-── analytics.sqlite            # SQLite DB (generated)
+-- docker-compose.yml
 
-── .checkpoint_ingested_files.txt  # Checkpoint file (generated)
+-- Dockerfile
+
+── pipeline_ingest.py              # Ingestion + transformations (SQLite)
+
+-- README.md
 
 
 ## Database Schema
